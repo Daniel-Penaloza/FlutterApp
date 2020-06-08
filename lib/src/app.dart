@@ -1,3 +1,4 @@
+import 'package:counter/src/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -8,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: 
       Center(
-        child: Text('Hello World'),
+        child: HomePage(),
       ),
     );
   }
