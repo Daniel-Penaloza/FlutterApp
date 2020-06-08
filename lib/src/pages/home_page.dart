@@ -12,13 +12,20 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Column(
+        child: 
+        Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Numero de clicks: ', style: styleText,),
             Text('0', style: styleText,),
           ],
-        )
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+            print('Hola Mundo');
+        },
       ),
     );
   }
