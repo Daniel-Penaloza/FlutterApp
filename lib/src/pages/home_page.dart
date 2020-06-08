@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   
+  final styleText = new TextStyle(fontSize: 25);
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,7 +12,13 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Text('Hola Mundo'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('Numero de clicks: ', style: styleText,),
+            Text('0', style: styleText,),
+          ],
+        )
       ),
     );
   }
